@@ -1,0 +1,51 @@
+{
+  "name": "cutoverproof",
+  "version": "0.1.0",
+  "description": "Offline static scanner for Google Content API for Shopping migration risks.",
+  "type": "module",
+  "bin": {
+    "cutoverproof": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "clean": "node ./scripts/clean.mjs",
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "test": "vitest run --configLoader runner",
+    "test:pack": "npm run build && node ./scripts/packed-smoke.mjs",
+    "test:all": "npm test && npm run typecheck && npm run test:pack",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "google-merchant-api",
+    "content-api-for-shopping",
+    "migration",
+    "static-analysis",
+    "cli"
+  ],
+  "author": "CutoverProof",
+  "license": "MIT",
+  "homepage": "https://cutoverproof.rallylive.ca/",
+  "engines": {
+    "node": ">=22"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/node": "^22.16.5",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
