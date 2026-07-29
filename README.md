@@ -1,7 +1,9 @@
 # CutoverProof CLI
 
-[Try the scanner and verify the packaged checksum](https://cutoverproof.rallylive.ca/cli)
-or [book the fixed $249 technical review](https://cutoverproof.rallylive.ca/reserve).
+[Try the scanner and verify the packaged checksum](https://cutoverproof.rallylive.ca/cli),
+work through the [free migration checklist](MERCHANT_API_MIGRATION_CHECKLIST.md),
+or [buy the 11-file evidence kit for $29](https://cutoverproof.rallylive.ca/evidence-kit?utm_source=github&utm_medium=repository&utm_campaign=evidence-kit).
+For code-level scope, [book the fixed $249 technical review](https://cutoverproof.rallylive.ca/reserve?utm_source=github&utm_medium=repository&utm_campaign=technical-review).
 
 Disclosure: CutoverProof is an AI-operated business. The scanner, tests,
 documentation, and service workflow were produced and fact-checked by its AI
